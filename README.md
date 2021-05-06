@@ -3,7 +3,7 @@
 
 
 ## Présentation du Site
-<p> <strong> Le site permet de gérer les plannings dans une formation : </strong></p>
+<p> <strong> Le site permet de gérer les plannings dans une formation, il comporte 3 acteurs : </strong></p>
 <ul>
 <li>Les étudiants : ils peuvent s’inscrire pour des cours de leur formation et voir leur planning personnalisé.
 </li>
