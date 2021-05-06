@@ -1,62 +1,151 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Site de gestion des plannings
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Présentation du Site
+<p> <strong> Le site permet de gérer les plannings dans une formation : </strong></p>
+<ul>
+<li>Les étudiants : ils peuvent s’inscrire pour des cours de leur formation et voir leur planning personnalisé.
+</li>
+<li>Les enseignants : Ils sont responsables du cours et peuvent déplacer ou créer des séances (entrées) dans le planning. Il
+peuvent également voir leur planning personnalisé.</li>
+ <li>L’administrateur : Il fait les tâches de gestion – création/modification des cours, formations, enseignants et étudiants. Il
+peut également faire toutes les tâches des étudiants et des enseignants, ainsi que voir le planning pour tout le monde.</li>
+ </ul>
+ 
+## Fonctionnalités
+<ol>
+    <li>
+       <strong>les étudiants : </strong></li>
+    
+<ul>
+ <li> Voir la liste des cours de la formation (dans laquelle l’étudiant est inscrit).
+   
+ </li>
+   
+ <li>Gestion des inscriptions :
+    <ul> 
+      <li>Inscription dans un cours</li>
+      <li>Désinscription d’un cours</li>
+      <li>Liste des cours auxquels l’étudiant est inscrit</li>
+      <li>Rechercher un cours dans la liste des cours de la formation</li> 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+   </ul> 
+   
+   
+ </li>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+ <li> Affichage du planning personnalisé (uniquement les séances des cours auxquels cet étudiant est inscrit) :
 
-## Learning Laravel
+    <ul> 
+      <li>Intégral</li>
+      <li>Par cours</li>
+      <li>Par semaine</li>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+   </ul>  
+ </li>      
+ </ul>
+ 
+ </br>
+ <li><strong> Les enseignants : </strong></li>
+ <ul>
+    <li>Voir la liste des cours dont on est responsable</li>
+ <li> Voir le planning personnalisé (les séances dont on est responsable) :
 
-## Laravel Sponsors
+    <ul> 
+      <li>Intégral</li>
+      <li>Par cours</li>
+      <li>Par semaine</li>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Premium Partners
+   </ul>  
+ </li> 
+ <li> Gestion du planning :
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
+    <ul> 
+      <li>Création d’une nouvelle séance de cours</li>
+      <li>Mise à jour d’une séance de cours.</li>
+      <li>Suppression d’une séance de cours</li>
+      <li>Utilisation 2 vues différentes pour les opérations ci-dessus (par cours et par semaine)</li>
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+   </ul>  
+ </li> 
+  <li><strong> Pour l’utilisateur (étudiant ou enseignant) : </strong></li>
+      <ul> 
+      <li>Création du compte</li>
+      <li>Changement de son mot de passe</li>
+      <li>Modification du nom/prénom</li>
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+   </ul> 
 
-## Security Vulnerabilities
+    </ul>
+    </br>
+ <li><strong> Utilisateurs : </strong></li>
+ <ul>
+ 
+ <li> Gestion du compte :
+    <ul> 
+      <li>Création du compte</li>
+      <li>Changement de son mot de passe</li>
+      
+   </ul>    
+ </li>
+ 
+ <li> Commande pizza :
+    <ul> 
+      <li>Liste des pizzas (avec pagination)</li>
+      <li>Ajout de pizza dans le panier</li>
+      <li>Modification de la quantité des pizzas dans le panier</li>
+      <li>Suppression des pizzas du panier</li>
+      <li>Affichage du prix total et passage de la commande</li>    
+   </ul>   
+    
+ </li>
+ 
+  <li> Gestion des commandes :
+    <ul> 
+      <li>Voir la liste des commandes passées triées par date (avec pagination))</li>
+      <li>Voir le détail de la commande (pizzas et prix total)r</li>
+      <li>Voir les commandes non-récupérées(statuts envoyé,  en traitement, prête)</li> 
+   </ul>   
+    
+ </li>
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+</ul>
+ 
+ 
+ </ol>
+ </br>
+ 
+## Base de données :
+<ul>
+    <li>users (id,nom,prenom,login,mdp,type)</li> 
+    <li>pizzas(id,nom,description,prix,created_at,updated_at,deleted_at)</li>
+    <li>commandes(id,user_id,statut,created_at,updated_at)</li>
+    <li>commande_pizza(commande_id,pizza_id,qte)</li>
+ </ul>
+
+<br/>
+
+## Comment tester l'application ? :
+<ul>
+    <li>Créer une base de données sqlite en respectant les noms et champs indiqués ci-dessus </li> 
+    <li>Copier le fichier <strong>.env.exemple</strong> dans <strong> .env </strong> et y rajouter les paramètres </li>
+    <li>Exécuter <strong>composer update </strong></li>
+    <li>Lancer l'application avec <strong> php artisan serve </strong></li>
+ </ul>
+
+<br/>
+
+## Outils Utilisés :
+
+Framework Laravel, PHP, Base de Données Sqlite, HTML, CSS. 
+
+
+## Auteur
+Koceila Kemiche
