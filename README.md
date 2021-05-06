@@ -84,35 +84,60 @@ peut également faire toutes les tâches des étudiants et des enseignants, ains
 
    </ul>
    </br>
- <li><strong> Utilisateurs : </strong></li>
+ <li><strong> L’administrateur : </strong></li>
  <ul>
  
- <li> Gestion du compte :
+ <li> Gestion des utilisateurs :
     <ul> 
-      <li>Création du compte</li>
-      <li>Changement de son mot de passe</li>
-      <li>Modification du nom/prénom</li>
+ <li>Liste :
+    <ul> 
+      <li>Intégrale</li>
+      <li>Filtre par type (étudiant/enseignant)</li>
+      <li>Recherche par nom/prénom/login</li>
+
+   </ul> 
+   
+   
+ </li>
+      <li>Acceptation (ou refus) d’un utilisateur qui a été auto-crée</li>
+      <li>Association d’un enseignant à un cours</li>
+      <li>Création d’un utilisateur</li>
+      <li>Modification d’un utilisateur (y compris le type)</li>
+      <li>Suppression d’un utilisateur</li>
         
       
    </ul>    
  </li>
  
- <li> Commande pizza :
+ <li> Gestion des cours :
     <ul> 
-      <li>Liste des pizzas (avec pagination)</li>
-      <li>Ajout de pizza dans le panier</li>
-      <li>Modification de la quantité des pizzas dans le panier</li>
-      <li>Suppression des pizzas du panier</li>
-      <li>Affichage du prix total et passage de la commande</li>    
+      <li>Liste</li>
+      <li>Recherche par intitulé</li>
+      <li>Création d’un cours</li>
+      <li>Modification d’un cours</li>
+      <li>Suppression d’un cours</li>
+     <li>Association d’un enseignant à un cours</li>
+     <li>Liste des cours par enseignant (pour n’importe quel enseignant)</li>
    </ul>   
     
  </li>
  
-  <li> Gestion des commandes :
+  <li> Gestion des formations :
     <ul> 
-      <li>Voir la liste des commandes passées triées par date (avec pagination))</li>
-      <li>Voir le détail de la commande (pizzas et prix total)r</li>
-      <li>Voir les commandes non-récupérées(statuts envoyé,  en traitement, prête)</li> 
+      <li>Liste</li>
+      <li>Ajout d’une formation</li>
+      <li>Modification d’une formation</li> 
+      <li>Supression d’une formation</li>
+   </ul>   
+    
+ </li>
+ 
+   <li> Gestion du planning :
+    <ul> 
+      <li>Création d’une nouvelle séance de cours(pour n’importe quel enseignant)</li>
+      <li>Mise à jour d’une séance de cours(pour n’importe quel enseignant)</li>
+      <li>Suppression d’une séance de cours(pour n’importe quel enseignant)</li> 
+      <li>Utiliser 2 vues différentes pour les opérations ci-dessus (par cours et par semaine)</li>
    </ul>   
     
  </li>
@@ -124,13 +149,27 @@ peut également faire toutes les tâches des étudiants et des enseignants, ains
  
  </ol>
  </br>
+ ## Notes :
+<ul>
+    <li>Pour créer un compte la procédure est la suivante : l’utilisateur remplit le formulaire en indiquant entre autre sa
+formation,il est inactif et ne peut pas encore accéder au site jusqu'à ce que  l’administrateur valide cette demande </li> 
+    <li>Un admin peut contourner la procédure ci-dessus, en créant directement un enregistrement</li>
+
+ </ul>
+
+<br/>
  
 ## Base de données :
 <ul>
-    <li>users (id,nom,prenom,login,mdp,type)</li> 
-    <li>pizzas(id,nom,description,prix,created_at,updated_at,deleted_at)</li>
-    <li>commandes(id,user_id,statut,created_at,updated_at)</li>
-    <li>commande_pizza(commande_id,pizza_id,qte)</li>
+    <li>users (id,nom,prenom,login,mdp,formation_id,type)
+</li> 
+    <li>formations(id,intitule,created_at,updated_at)
+</li>
+    <li>cours(id,intitule,user_id,formation_id,created_at,updated_at)
+</li>
+    <li>cours_users(cours_id,user_id)</li>
+    </li>
+    <li>plannings(id,cours_id,date_debut,date_fin)</li>
  </ul>
 
 <br/>
