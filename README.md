@@ -35,7 +35,7 @@ peut également faire toutes les tâches des étudiants et des enseignants, ains
    
  </li>
 
- <li> Affichage du planning personnalisé (uniquement les séances des cours auxquels cet étudiant est inscrit) :
+ <li> Affichage du planning personnalisé (uniquement les séances des cours auxquels cet étudiant est inscrit) :</li>
 
     <ul> 
       <li>Intégral</li>
@@ -44,7 +44,7 @@ peut également faire toutes les tâches des étudiants et des enseignants, ains
 
 
    </ul>  
- </li>      
+      
  </ul>
  
  </br>
