@@ -82,8 +82,8 @@ peut également faire toutes les tâches des étudiants et des enseignants, ains
 
    </ul> 
 
-    </ul>
-    </br>
+   </ul>
+   </br>
  <li><strong> Utilisateurs : </strong></li>
  <ul>
  
@@ -91,6 +91,8 @@ peut également faire toutes les tâches des étudiants et des enseignants, ains
     <ul> 
       <li>Création du compte</li>
       <li>Changement de son mot de passe</li>
+      <li>Modification du nom/prénom</li>
+        
       
    </ul>    
  </li>
