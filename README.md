@@ -35,15 +35,16 @@ peut également faire toutes les tâches des étudiants et des enseignants, ains
    
  </li>
 
- <li> Affichage du planning personnalisé (uniquement les séances des cours auxquels cet étudiant est inscrit) :</li>
+ <li> Affichage du planning personnalisé (uniquement les séances des cours auxquels cet étudiant est inscrit) :
 
-    <ul> 
+  <ul> 
       <li>Intégral</li>
       <li>Par cours</li>
       <li>Par semaine</li>
 
 
    </ul>  
+   </li>
       
  </ul>
  
