@@ -54,7 +54,7 @@ peut également faire toutes les tâches des étudiants et des enseignants, ains
     <li>Voir la liste des cours dont on est responsable</li>
  <li> Voir le planning personnalisé (les séances dont on est responsable) :
 
-    <ul> 
+  <ul> 
       <li>Intégral</li>
       <li>Par cours</li>
       <li>Par semaine</li>
