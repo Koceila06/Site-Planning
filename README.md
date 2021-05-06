@@ -149,6 +149,7 @@ peut également faire toutes les tâches des étudiants et des enseignants, ains
  
  </ol>
  </br>
+ 
  ## Notes :
 <ul>
     <li>Pour créer un compte la procédure est la suivante : l’utilisateur remplit le formulaire en indiquant entre autre sa
