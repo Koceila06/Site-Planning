@@ -64,7 +64,7 @@ peut également faire toutes les tâches des étudiants et des enseignants, ains
  </li> 
  <li> Gestion du planning :
 
-    <ul> 
+   <ul> 
       <li>Création d’une nouvelle séance de cours</li>
       <li>Mise à jour d’une séance de cours.</li>
       <li>Suppression d’une séance de cours</li>
