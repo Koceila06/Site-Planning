@@ -47,7 +47,6 @@ peut également faire toutes les tâches des étudiants et des enseignants, ains
    </li>
       
  </ul>
- 
  </br>
  <li><strong> Les enseignants : </strong></li>
  <ul>
