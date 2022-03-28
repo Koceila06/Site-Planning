@@ -1,8 +1,6 @@
 
 # Site de gestion des plannings
 
-![MeilleurevsTétu](https://user-images.githubusercontent.com/77555379/160309421-0a948485-02b4-4b63-a1cc-8014366d5d1b.png)
-
 ## Présentation du Site
 
 
