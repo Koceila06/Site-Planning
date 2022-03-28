@@ -1,9 +1,11 @@
 
 # Site de gestion des plannings
 
+![MeilleurevsTétu](https://user-images.githubusercontent.com/77555379/160309421-0a948485-02b4-4b63-a1cc-8014366d5d1b.png)
 
 ## Présentation du Site
-![Alt text](C:\Users\ykemi\koceila\Koceila_L3\IA\MeilleurevsTétu.img?raw=true "Optional Title")
+
+
 <p> <strong> Le site permet de gérer les plannings dans une formation, il comporte 3 acteurs : </strong></p>
 <ul>
 <li>Les étudiants : ils peuvent s’inscrire pour des cours de leur formation et voir leur planning personnalisé.
